@@ -24,17 +24,16 @@ import axios from 'axios'
 export default {
   name: 'app',
   data () {
-    http://api.football-data.org/v2/competitions/149461?head2head=0
   },
   mounted() {
-    axios.get('http://api.football-data.org/v2/matches?competitions=2072')
+    axios.get('http://api.football-data.org/v2/competitions/2072')
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
