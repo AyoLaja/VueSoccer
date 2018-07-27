@@ -20,12 +20,14 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   name: 'app',
   data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
+    http://api.football-data.org/v2/competitions/149461?head2head=0
+  },
+  mounted() {
+    axios.get('http://api.football-data.org/v2/matches?competitions=2072')
   }
 }
 </script>
@@ -35,26 +37,7 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
-
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
 }
 </style>
